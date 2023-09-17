@@ -1,0 +1,42 @@
+.contact-us-main-container{
+    display: flex;
+    flex-direction: column;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.info-heading{
+    font-size: medium;
+    font-family: cursive;
+    font-weight: 500;
+    color: #000;
+}
+.span-text{
+    font-size: medium;
+    font-family: cursive;
+    font-weight: 500;
+    color: #2e9cca;
+}
+.span-text2{
+    font-size: medium;
+    font-family: cursive;
+    font-weight: 500;
+    color: #2e9cca;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons{
+    height: 50px;
+    width: 50px;
+    margin: 10px 30px 0 30px;
+}
