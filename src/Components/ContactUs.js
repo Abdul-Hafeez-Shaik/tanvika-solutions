@@ -8,7 +8,9 @@ import instagramIcon from '../Assets/Images/instagram-icon.png'
 import clipboardCopy from 'clipboard-copy'
 
 function ContactUs() {
-    const [message, setMessage] = useState(false)
+    const [message, setMessage] = useState(false);
+    const [emailMessage, setEmailMessage] = useState(false);
+
 
     const copyNumber = () => {
         clipboardCopy(6281137198);
@@ -19,19 +21,39 @@ function ContactUs() {
         setTimeout(() => {
             setMessage(false); // Hide the message after 30 seconds
             console.log('message is false');
-        }, 30000); // 30 seconds in milliseconds
+        }, 10000); // 30 seconds in milliseconds
+    }
+
+    const copyNumber2 = () => {
+        clipboardCopy(8978400607);
+        setMessage(true)
+        setTimeout(() => {
+            setMessage(false); // Hide the message after 30 seconds
+            console.log('message is false');
+        }, 10000); // 10 seconds in milliseconds
+    }
+    const copyEmail = () => {
+        clipboardCopy("Tanvikasolutions23@gmail.com");
+        setEmailMessage(true)
+        setTimeout(() => {
+            setEmailMessage(false); // Hide the message after 30 seconds
+            console.log('message is false');
+        }, 10000); // 10 seconds in milliseconds
     }
 
   return (
     <div className='contact-us-main-container'>
         <div className='info-container'>
-            <h1 className='info-heading'>info@ <span className='span-text'> Tanvika Solutions </span> </h1>
+            <p className='info-heading'>Address: Flat No: 437, Padmavathi plaza, KPHB main road, <br/> Kukatpally, Hyderabad. info@ <span className='span-text'> Tanvika Solutions </span> </p>
+            <p className='info-heading'>Email: <span className='span-text2' onClick={copyEmail}> Tanvikasolutions23@gmail.com </span></p>
+            {emailMessage ? <p className='message-text'>Email ID Copied to clipboard</p> : "" }
+            <p className='info-heading'>Contact No: <span className='span-text2' onClick={copyNumber2}>8978400607</span> </p>
             <p className='info-heading'> Contact No:{' '}
                 <span className="span-text2" onClick={copyNumber}>
                     6281137198
                 </span>{' '}
             </p>
-            {message ? <p className='info-heading'>Mobile number Copied to clipboard</p> : "" }
+            {message ? <p className='message-text'>Mobile number Copied to clipboard</p> : "" }
         </div>
         <div className='icons-container'>
             <a  href="https://wa.me/8978400607" target='_blank'><img className='icons' src={whatsAppIcon} alt="" /></a>
