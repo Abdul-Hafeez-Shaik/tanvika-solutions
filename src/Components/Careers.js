@@ -4,15 +4,11 @@ import javaIcon from '../Assets/Images/Java.png'
 import embededDeveloperIcon from '../Assets/Images/EmbeddeDeveloper.png'
 import pythonIcon from '../Assets/Images/pythonIcon.png'
 import marketingManagerIcon from '../Assets/Images/marketingManagerIcon.png'
+import internship from '../Assets/Images/internship-removebg-preview.png';
 
 function Careers() {
   return (
     <div className='careers-container'>
-      <h1 className='careers-headings'>Java Full Stack Developer</h1>
-      <h1 className='careers-headings'>Embedded Developer</h1>
-      <h1 className='careers-headings'>Python Full Stack Developer</h1>
-      <h1 className='careers-headings' >Marketing Managers</h1>
-      <h1 className='careers-headings'>Internships</h1>
       <div className='card-container'>
         <div className='careers-card'>
           <div className='card-img-container'>
@@ -49,6 +45,16 @@ function Careers() {
           </div>
           <div className='card-img-container'>
             <img style={{marginTop:"100px",height:"160px", width:"280px" }} src={marketingManagerIcon} alt="" className='card-img' />
+          </div>
+        </div>
+        <div className='careers-card'>
+          <div className='card-img-container'>
+            <img src={internship} alt="" className='card-img' />
+          </div>
+          <div className='card-text-container'>
+            <h1 className='careers-headings'>Internship</h1>
+            <p className='description1'>Btech, Mtech, MBA (Marketing,HR,Finance), MCA, BSC, MSC, DIPLOMA
+            </p>
           </div>
         </div>
       </div>

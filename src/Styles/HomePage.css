@@ -7,6 +7,7 @@
 .context-and-image-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .context-container{
@@ -55,10 +56,11 @@
 }
 
 .software-img{
-    opacity: 1;
+    height: 500px;
+    /* opacity: 1;
     transition: opacity 400ms;
     transition-delay: 0ms;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0; */
 }
 
 .cards-container{

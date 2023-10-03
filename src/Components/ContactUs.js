@@ -6,6 +6,7 @@ import whatsAppIcon from '../Assets/Images/whatsapp-icon.png'
 import facebookIcon from '../Assets/Images/facebook-icon.png'
 import instagramIcon from '../Assets/Images/instagram-icon.png'
 import clipboardCopy from 'clipboard-copy'
+import twitter from '../Assets/Images/twitter.png';
 
 function ContactUs() {
     const [message, setMessage] = useState(false);
@@ -56,11 +57,13 @@ function ContactUs() {
             {message ? <p className='message-text'>Mobile number Copied to clipboard</p> : "" }
         </div>
         <div className='icons-container'>
-            <a  href="https://wa.me/8978400607" target='_blank'><img className='icons' src={whatsAppIcon} alt="" /></a>
-            <a  href=""><img className='icons' src={youtubeIcon} alt="" /></a>
-            <a  href=""><img className='icons' src={instagramIcon} alt="" /></a>
-            <a  href=""><img className='icons' src={facebookIcon} alt="" /></a>
-            <a  href="https://t.me/YourTelegram@UNooB" target='_blank'><img className='icons' src={telegramIcon} alt="" /></a>
+            {/* <a  href="https://wa.me/8978400607" target='_blank'><img className='icons' src={whatsAppIcon} alt="" /></a> */}
+            <a  href=" https://whatsapp.com/channel/0029Va5az4p4NVigo8WynI2U " target='_blank'><img className='icons' src={whatsAppIcon} alt="" /></a>
+            <a  href="https://twitter.com/tanvikasolution" target='_blank'><img className='icons' src={twitter} alt="" /></a>
+            {/* <a  href=""><img className='icons' src={youtubeIcon} alt="" /></a> */}
+            <a  href="https://www.instagram.com/tanvikasolutions23/" target='_blank'><img className='icons' src={instagramIcon} alt="" /></a>
+            <a  href="https://www.facebook.com/profile.php?id=100095269826221" target='_blank'><img className='icons' src={facebookIcon} alt="" /></a>
+            <a  href="https://t.me/+gWOMBAJtI-kzODE1" target='_blank'><img className='icons' src={telegramIcon} alt="" /></a>
         </div>
     </div>
   )

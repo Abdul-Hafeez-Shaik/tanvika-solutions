@@ -28,7 +28,7 @@ function HomePage() {
               <h2 className='sub-headings' >Tanvika Team</h2>
               <p className='description1'>
                 The executive leaders are the biggest asset of the organization. We push boundaries within clear goals. Our team works from a disciplined plan, agreed upon and followed through. We work together very efficiently, economically, and constantly.
-                With well over a rich experience of these executives, the organization is capable of handling  projects  maintenance and Traning - both simple and complex.We respect, admire and love the talent of our co-workers and draw on them in our pursuits.
+                With well over a rich experience of these executives, the organization is capable of handling  projects  maintenance and Traning - both simple and complex. <br/> We respect, admire and love the talent of our co-workers and draw on them in our pursuits.
                 We challenge one another in efforts to serve our clients, always seeking and encouraging the next great idea. Our employees operate with the objective to develop individuals towards self-directed growth and long-term careers.
               </p>
             </div>

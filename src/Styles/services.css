@@ -5,40 +5,171 @@
 }
 
 .services-heading{
-    font-size: 24px;
-    font-family: sans-serif;
-    font-weight: 300;
-    color: #0c0042;
+    font-size: 48px;
+    font-family: Sumana,serif;
+    font-weight: 500;
+    color: #fff;
     margin: 20px 0 20px 20px;
 }
-
-.list-items{
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 300;
+.services-heading2{
+    font-size: 24px;
+    font-family: serif;
+    font-weight: 600;
     color: #0c0042;
-    transition: .3s all ease;
-    text-decoration: none;
-    margin: 0 0 10px 20px;
 }
-.list-item{
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 300;
+.services-heading1{
+    font-size: 32px;
+    font-family: serif;
+    font-weight: 600;
     color: #0c0042;
-    transition: .3s all ease;
-    list-style-type: disc;
-    margin: 0 0 10px 20px;
+    margin: 30px 20px 0 40px;
 }
 
-.list-items:hover{
-    margin-left: 40px;
-    color: #0d6efd;
-    cursor: pointer;
-}
-
-.services-cards{
+.services-text-container{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    margin: 40px 0 20px 20px;
+}
+
+.services-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #005eb8;
+    background-image: url('../Assets//Images/background-waves.svg');
+    /* height: 400px; */
+    /* background-position: top left; */
+    width: 100%;
+}
+
+.services-card2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border-top: 12px solid #005eb8;
+    border-bottom: 1px solid #dadfe3;
+    border-left: 1px solid #dadfe3;
+    border-right: 1px solid #dadfe3;
+    padding: 50px;
+    margin: 50px;
+}
+/* .services-card2:hover{
+    border: 1px solid #0c0042;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.274);
+} */
+
+.services-description{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color:#fff;
+    margin: 20px 20px 0 20px;
+}
+.services-description1{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 200;
+    color:#000;
+    margin: 20px 0 0 20px;
+}
+.services-description2{
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 200;
+    color:#000;
+    margin: 20px 0 0 20px;
+}
+.services-span-text{
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color:#000;
+}
+.cover-img{
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.services-text-container{
+    width: 70%;
+}
+
+.services-description1{
+    font-family: montserrat,sans-serif!important;
+    color: #0c0042;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0 0 0.5rem 0;
+}
+
+.cardss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconss{
+    height: 80px;
+    width: 80px;
+}
+.training-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #f0f9ff;
+    width: 90%;
+    /* height: 500px; */
+    max-height: 400px !important;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+    padding: 20px;
+    margin: 0 0 40px 0;
+}
+.training-container2{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #f0f9ff;
+    width: 90%;
+    /* height: 500px; */
+    max-height: 600px !important;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+    padding: 20px;
+    margin: 0 0 40px 0;
+}
+
+.training-heading{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 10px 0 10px 20px;
+}
+.training-description{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin: 2px 0 0 20px ;
+}
+
+.services-card3{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 500px;
+    height: 380px;
+    background-color: #f2f9ff;
+    border-top: 12px solid #005eb8;
+    border-bottom: 1px solid #dadfe3;
+    border-left: 1px solid #dadfe3;
+    border-right: 1px solid #dadfe3;
+    padding: 10px 0 20px 0;
+    margin: 50px;
 }

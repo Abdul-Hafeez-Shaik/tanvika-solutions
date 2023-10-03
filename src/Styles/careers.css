@@ -29,3 +29,8 @@
     border: 1px solid #0c0042;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.274);
 }
+.card-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
