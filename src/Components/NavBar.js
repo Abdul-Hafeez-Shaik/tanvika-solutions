@@ -4,6 +4,7 @@ import '../Styles/NavBar.css'
 import logo from '../Assets/Images/TanvikaLogo1-removebg-preview.png'
 // import logo from '../Assets/Images/machine-learning.png'
 // import logo from '../Assets/Images/TanvikaLogo1.jpg'
+// import tanvikaLogo from '../../public/tanvikaLogo.png'
 
 function NavBar() {
     const navigate = useNavigate()
@@ -16,11 +17,11 @@ function NavBar() {
     <nav className='nav-bar'>
         <img onClick={goToHome} className='logo-img' src={logo} alt="" />
         <div className='nav-item-container'>
-            <NavLink className='nav-item' to="/">Home</NavLink>
-            <NavLink className='nav-item' to="/aboutUs">About Us</NavLink>
-            <NavLink className='nav-item' to="/services">Services</NavLink>
-            <NavLink className='nav-item' to="/careers">Careers</NavLink>
-            <NavLink className='nav-item' to="/contactUs">Contact Us</NavLink>
+            <NavLink activeClassName="active" className='nav-item' to="/">Home</NavLink>
+            <NavLink activeClassName="active" className='nav-item' to="/aboutUs">About Us</NavLink>
+            <NavLink activeClassName="active" className='nav-item' to="/services">Services</NavLink>
+            <NavLink activeClassName="active" className='nav-item' to="/careers">Careers</NavLink>
+            <NavLink activeClassName="active" className='nav-item' to="/contactUs">Contact Us</NavLink>
         </div>
     </nav>
   )

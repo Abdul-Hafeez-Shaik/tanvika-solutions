@@ -34,12 +34,18 @@
 .nav-item{
     color: #fff;
     /* color: #25274d; */
-    font-size:medium;
-    font-family: cursive;
+    font-size:18px;
+    font-family: sans-serif;
     font-weight: 400;
     text-decoration: none;
     margin-left: 30px;
     cursor: pointer;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 2px ;
+
 }
 
 .nav-item:hover{

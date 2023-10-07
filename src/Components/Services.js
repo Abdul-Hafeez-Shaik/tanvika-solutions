@@ -5,8 +5,9 @@ import customSoftware from '../Assets/Images/custom-software.png';
 import softwareProduct from '../Assets/Images/software-product.png';
 import outSourcing from '../Assets/Images/outsourcing.png'
 import maintainance from '../Assets/Images/maintenance.png';
-import augumentation from '../Assets/Images/service-options-python-devs_staff-augmentation.png';
-import teamWork from '../Assets/Images/service_team-augmentation.png'
+import softwareTraining from '../Assets/Images/developer.png'
+import teamWork from '../Assets/Images/service_team-augmentation.png';
+import questionIcon from '../Assets/Images/question-sign.png'
 
 function Services() {
   // const [page, setPage] = useState(1);
@@ -15,19 +16,17 @@ function Services() {
         <div className='services-card'>
           <div className='text-container'>
             <h1 className='services-heading'>Software Development Services</h1>
-            <p className='services-description'>Our Passion is to Deliver Software that Helps You Succeed Combining over 5 years of experience in IT and a great drive for innovation, TANVIKA SOLUTIONS designs and builds software to rely on: secure, high-performing, scalable, and user-friendly.</p>
+            <p className='services-description'>Our Passion is to Deliver Software that Helps You Succeed Combining over 5 years of experience in IT and a great drive for innovation, Tanvika Solutions designs and builds software to rely on: secure, high-performing, scalable, and user-friendly.</p>
           </div>
           <div className='img-container'>
             <img className='cover-img' src={coverImg} alt="" />
           </div>
         </div>
-        <div className='services-text-container'>
-          <p className='services-description2'> <span className='services-span-text'> Software development services </span> help plan, design, develop, integrate, test, manage and evolve software solutions. Quality-centered and adherent to mature software development practices, <span className='services-span-text'> TANVIKA SOLUTIONS </span> provides application development services to startups, software companies, and enterprises across 30+ industries. We are ready to offer end-to-end development that covers everything from business analysis to software delivery and support, help modernize your legacy software, or augment your team with our IT experts at any stage of SDLC.
-          </p>
-          <p className='services-description2'>  Why Choose <span className='services-span-text'> Tanvika Solutions </span> for Your Software Development Project </p>
-        </div>
+        {/* <div className='services-text-container'> */}
+          <h1 className='services-heading1'>  Why Choose Tanvika Solutions for Your Software Development Project <img style={{ height:"30px", width:"30px", marginLeft:"5px"}} src={questionIcon} alt="" /> </h1>
+        {/* </div> */}
         <div>
-          <h1 className='services-heading1'>Different Collaboration Scenarios for Your Software Development.</h1>
+          {/* <h1 className='services-heading1'>Different Collaboration Scenarios for Your Software Development.</h1> */}
           <div className='cardss'>
             <div className='services-card2'>
               <div className='card-img-container'>
@@ -71,15 +70,6 @@ function Services() {
           <div className='cardss'>
             <div className='services-card2'>
               <div className='card-img-container'>
-                <img className='iconss' src={augumentation} alt="" />
-              </div>
-              <div className='card-text-container'>
-                <h1 className='services-heading2'>Team augmentation</h1>
-                <p className='services-description1'>We offer from 0.5 FTE to 150+ FTE resources for an entire software development life cycle: developers and architects well-versed in back-end, front-end, and mobile development, testing engineers, development team leads, DevOps engineers, data architects, and other roles.</p>
-              </div>
-            </div>
-            <div className='services-card2'>
-              <div className='card-img-container'>
                 <img className='iconss' src={teamWork} alt="" />
               </div>
               <div className='card-text-container'>
@@ -87,28 +77,39 @@ function Services() {
                 <p className='services-description1'>We assemble high-performing and collaborative dedicated teams of pre-vetted IT talents from our permanent pool. With a tailored team focused solely on your project, you can efficiently address any skill gaps and speed up your development initiative.</p>
               </div>
             </div>
+            <div className='services-card2'>
+              <div className='card-img-container'>
+                <img className='iconss' src={softwareTraining} alt="" />
+              </div>
+              <div style={{marginRight:"180px"}} className='card-text-container2'>
+                <h1 className='services-heading2'>Software Training</h1>
+                <p className='training-description'>Embeded Systems.</p>
+                <p className='training-description'> Vlsi (Very Large scale Integration)</p>
+                <p className='training-description'>Python Fullstack Development</p>
+                <p className='training-description'>Android Programming</p>
+                <p className='training-description'>Java Fullstack Development</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className='training-container'>
+        {/* <div className='training-container'>
           <h1 className='training-heading'>Software Training</h1>
           <p className='training-description'>Core JavaAdvanced Java (J2Ee)Spring & Hibernate.</p>
           <p className='training-description'>Android Programming.</p>
           <p className='training-description'>Python Programming.</p>
           <p className='training-description'>Embeded Systems, Vlsi,</p>
-          <p className='training-description'>Cad, Cam, Cae</p>
-          <p className='training-description'>Autocad, Hypermesh, Pro-E, Ansys, Catia</p>
-          <p className='training-description'>Stadpro, Revit, Hvac, Mep.</p>
-            
-        </div>
+        </div> */}
         <div className='training-container2'>
           <h1 className='training-heading'>Academic Projects</h1>
-          <p className='training-description'>MTech,Btech,MBA,MCA,Diploma(ECE,EEE,CSE,Civil,Mechnichal)</p>
-          <p className='training-description'>Final Year Projects for BE</p>
-          <p className='training-description'>Final Year Projects for BSC</p>
-          <p className='training-description'>Final Year Projects for MTech</p>
-          <p className='training-description'>Final Year Projects for Diploma</p>
-          <p className='training-description'>Final Year Projects for MCA</p>
-          <p className='training-description'>Final Year Projects for MBA</p>
+          <ul>
+            <li className='training-description'>MTech,Btech,MBA,MCA,Diploma(ECE,EEE,CSE,Civil,Mechnichal)</li>
+            <li className='training-description1'>Final Year Projects for BE</li>
+            <li className='training-description1'>Final Year Projects for BSC</li>
+            <li className='training-description1'>Final Year Projects for MTech</li>
+            <li className='training-description1'>Final Year Projects for Diploma</li>
+            <li className='training-description1'>Final Year Projects for MCA</li>
+            <li className='training-description1'>Final Year Projects for MBA</li>
+          </ul>
           <p style={{marginTop:"15px"}} className='training-description'>
             As a part of the projects and development training, we offer Projects and workshops keeping in view the latest emerging trends and technologies under Parallel Development Process. We play a Dual Positive Role by satisfying the academic requirements and as well giving the necessary training in Software Design and Development which enables you to meet the industrial requirements with a wider knowledge and a greater confidence.
             We can proudly say that, we are the first in Hyderabad to provide training on Application package with Real Time Microsoft certified professionals who have not less than 5 years of work experience.
@@ -139,18 +140,22 @@ function Services() {
                 <p className='services-description1'>Game Development</p>
             </div>
             <div className='services-card3'>
-              <h1 className='services-heading2'>Mechanical & Automobile Workshops</h1>
-                <p className='services-description1'>Automobile Mechanics & <br/>IC Engine Design</p>
-                <p className='services-description1'>Automotive Electronics</p>
-                <p className='services-description1'>AutoCAD </p>
-                <p className='services-description1'>CATIA </p>
-                <p className='services-description1'>SolidWorks</p>
-                <p className='services-description1'>ANSYS</p>
-                <p className='services-description1'>Robotics</p>
+            <h1 className='services-heading2'>Electronics Workshops</h1>
+                <p className='services-description1'>IoT- Internet of Things</p>
+                <p className='services-description1'> Arduino, Robotics</p>
+                <p className='services-description1'>Embedded System</p>
+                <p className='services-description1'>Embedded & VLSI </p>
+                <p className='services-description1'>Python</p>
+                <p className='services-description1'>Automation & Embedded</p>
+                <p className='services-description1'>IoT using RaspberryPi</p>
+                <p className='services-description1'>IoT using Arduino</p>
+                <p className='services-description1'>Electrical Workshops</p>
+                <p className='services-description1'>Industrial Automation - PLC & SCADA</p>
+                <p className='services-description1'>Neural Network using MATLAB</p>
             </div>
           </div>
           <div   className='cardss'>
-            <div style={{height:"520px"}} className='services-card3'>
+            <div style={{height:"410px"}} className='services-card3'>
               <h1 className='services-heading2'>Civil Workshops</h1>
                 <p className='services-description1'>StaadPro</p>
                 <p className='services-description1'> Foundation Analysis</p>
@@ -162,7 +167,7 @@ function Services() {
                 <p className='services-description1'>3DSMAX</p>
                 <p className='services-description1'>Revit</p>
             </div>
-            <div style={{height:"520px"}} className='services-card3'>
+            <div style={{height:"410px"}} className='services-card3'>
               <h1 className='services-heading2'>Web Design Workshops</h1>
                 <p className='services-description1'>Wordpress CMS</p>
                 <p className='services-description1'>Digital Marketing & SEO</p>
@@ -176,19 +181,15 @@ function Services() {
                 <p className='services-description1'>Industrial Automation - PLC & SCADA</p>
                 <p className='services-description1'>Digital Marketing</p>
             </div>
-            <div style={{height:"520px"}} className='services-card3'>
-              <h1 className='services-heading2'>Electronics Workshops</h1>
-                <p className='services-description1'>IoT- Internet of Things</p>
-                <p className='services-description1'> Arduino, Robotics</p>
-                <p className='services-description1'>Embedded System</p>
-                <p className='services-description1'>Embedded & VLSI </p>
-                <p className='services-description1'>Python</p>
-                <p className='services-description1'>Automation & Embedded</p>
-                <p className='services-description1'>IoT using RaspberryPi</p>
-                <p className='services-description1'>IoT using Arduino</p>
-                <p className='services-description1'>Electrical Workshops</p>
-                <p className='services-description1'>Industrial Automation - PLC & SCADA</p>
-                <p className='services-description1'>Neural Network using MATLAB</p>
+            <div style={{height:"410px"}} className='services-card3'>
+              <h1 className='services-heading2'>Mechanical & <br/> Automobile Workshops</h1>
+                <p className='services-description1'>Automobile Mechanics & <br/>IC Engine Design</p>
+                <p className='services-description1'>Automotive Electronics</p>
+                <p className='services-description1'>AutoCAD </p>
+                <p className='services-description1'>CATIA </p>
+                <p className='services-description1'>SolidWorks</p>
+                <p className='services-description1'>ANSYS</p>
+                <p className='services-description1'>Robotics</p>
             </div>
           </div>
       </div>

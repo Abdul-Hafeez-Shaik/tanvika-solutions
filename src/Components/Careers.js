@@ -10,7 +10,7 @@ function Careers() {
   return (
     <div className='careers-container'>
       <div className='card-container'>
-        <div className='careers-card'>
+        {/* <div className='careers-card'>
           <div className='card-img-container'>
             <img src={javaIcon} alt="" className='card-img' />
           </div>
@@ -18,7 +18,7 @@ function Careers() {
             <h1 className='careers-headings'>Java Full Stack Developer</h1>
             <p className='description1'>Full Stack Java Developers are responsible for designing and implementing the logic & data storage of an application. They use Java and related technologies such as Spring and Hibernate to build robust and scalable systems that can handle millions of requests per second.</p>
           </div>
-        </div>
+        </div> */}
         <div className='careers-card'>
           <div style={{marginLeft:"60px", marginRight:"10px"}} className='card-text-container'>
             <h1 className='careers-headings'>Embedded Developer</h1>
